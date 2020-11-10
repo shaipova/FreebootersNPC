@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">FreebootersNPC</string>
+    <string name="title">Freebooters on the Frontier</string>
+    <string name="background_image">background_image</string>
+    <string name="choose_their">Choose their</string>
+    <string name="heritage">Heritage</string>
+    <string name="human">Human</string>
+    <string name="halfling">Halfling</string>
+    <string name="dwarf">Dwarf</string>
+    <string name="elf">Elf</string>
+    <string name="alignment">Alignment</string>
+    <string name="good">Good</string>
+    <string name="evil">Evil</string>
+    <string name="chaotic">Chaotic</string>
+    <string name="heutral">Heutral</string>
+    <string name="lawful">Lawful</string>
+
+    <string-array
+        name="arrHumanHeritage">
+        <item>human</item><item>human</item><item>human</item><item>human</item><item>human</item><item>human</item><item>human</item><item>halfling</item><item>halfling</item><item>dwarf</item><item>dwarf</item><item>elf</item>
+    </string-array>
+
+    <string-array
+        name="arrHalflingHeritage">
+        <item>halfling</item><item>halfling</item><item>halfling</item><item>halfling</item><item>halfling</item><item>halfling</item><item>halfling</item><item>human</item><item>human</item><item>dwarf</item><item>dwarf</item><item>elf</item>
+    </string-array>
+
+    <string-array
+        name="arrDwarfHeritage">
+        <item>dwarf</item><item>dwarf</item><item>dwarf</item><item>dwarf</item><item>dwarf</item><item>dwarf</item><item>dwarf</item><item>human</item><item>human</item><item>halfling</item><item>halfling</item><item>elf</item>
+    </string-array>
+    <string-array
+        name="arrElfHeritage">
+        <item>elf</item><item>elf</item><item>elf</item><item>elf</item><item>elf</item><item>elf</item><item>elf</item><item>elf</item><item>elf</item><item>human</item><item>halfling</item><item>dwarf</item>
+    </string-array>
+    <string-array
+        name="arrHeritage"></string-array>
+    <string-array
+        name="arrHeritage"></string-array>
+    <string-array
+        name="arrHeritage"></string-array>
+    <string-array
+        name="arrHeritage"></string-array>
+    <string-array
+        name="arrHeritage"></string-array>
+    <string-array
+        name="arrHeritage"></string-array>
+</resources>

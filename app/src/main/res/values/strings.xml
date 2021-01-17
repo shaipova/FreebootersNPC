@@ -2,6 +2,7 @@
     <string name="app_name">FreebootersNPC</string>
     <string name="title">Freebooters on the Frontier</string>
     <string name="background_image">background_image</string>
+    <string name="createquicknpc">Create Quick NPC</string>
     <string name="choose_their">Choose their</string>
     <string name="heritage">Heritage</string>
     <string name="human">Human</string>
@@ -14,35 +15,484 @@
     <string name="chaotic">Chaotic</string>
     <string name="heutral">Heutral</string>
     <string name="lawful">Lawful</string>
+    <string name="prevailing_alignment">Prevailing Alignment</string>
+    <string name="prevailing_heritage">Prevailing Heritage</string>
+    <string name="name">Name:</string>
+    <string name="hint">...</string>
+    <string name="occupation">Occupation</string>
+    <string name="gender">Gender</string>
+    <string name="motivation">Motivation</string>
+    <string name="traits">Traits</string>
+    <string name="virtue">Virtue</string>
+    <string name="vice">Vice</string>
+    <string name="yourNPC">Your NPC</string>
+    <string name="NPCinfo">NPC info</string>
+    <string name="createnew">Create new NPC</string>
+    <string name="save">Save</string>
+    <string name="logo_image">logo_image</string>
 
-    <string-array
-        name="arrHumanHeritage">
-        <item>human</item><item>human</item><item>human</item><item>human</item><item>human</item><item>human</item><item>human</item><item>halfling</item><item>halfling</item><item>dwarf</item><item>dwarf</item><item>elf</item>
+    <string-array name="arrHumanHeritage">
+        <item>human</item>
+        <item>human</item>
+        <item>human</item>
+        <item>human</item>
+        <item>human</item>
+        <item>human</item>
+        <item>human</item>
+        <item>halfling</item>
+        <item>halfling</item>
+        <item>dwarf</item>
+        <item>dwarf</item>
+        <item>elf</item>
     </string-array>
 
-    <string-array
-        name="arrHalflingHeritage">
-        <item>halfling</item><item>halfling</item><item>halfling</item><item>halfling</item><item>halfling</item><item>halfling</item><item>halfling</item><item>human</item><item>human</item><item>dwarf</item><item>dwarf</item><item>elf</item>
+    <string-array name="arrHalflingHeritage">
+        <item>halfling</item>
+        <item>halfling</item>
+        <item>halfling</item>
+        <item>halfling</item>
+        <item>halfling</item>
+        <item>halfling</item>
+        <item>halfling</item>
+        <item>human</item>
+        <item>human</item>
+        <item>dwarf</item>
+        <item>dwarf</item>
+        <item>elf</item>
     </string-array>
 
-    <string-array
-        name="arrDwarfHeritage">
-        <item>dwarf</item><item>dwarf</item><item>dwarf</item><item>dwarf</item><item>dwarf</item><item>dwarf</item><item>dwarf</item><item>human</item><item>human</item><item>halfling</item><item>halfling</item><item>elf</item>
+    <string-array name="arrDwarfHeritage">
+        <item>dwarf</item>
+        <item>dwarf</item>
+        <item>dwarf</item>
+        <item>dwarf</item>
+        <item>dwarf</item>
+        <item>dwarf</item>
+        <item>dwarf</item>
+        <item>human</item>
+        <item>human</item>
+        <item>halfling</item>
+        <item>halfling</item>
+        <item>elf</item>
     </string-array>
-    <string-array
-        name="arrElfHeritage">
-        <item>elf</item><item>elf</item><item>elf</item><item>elf</item><item>elf</item><item>elf</item><item>elf</item><item>elf</item><item>elf</item><item>human</item><item>halfling</item><item>dwarf</item>
+    <string-array name="arrElfHeritage">
+        <item>elf</item>
+        <item>elf</item>
+        <item>elf</item>
+        <item>elf</item>
+        <item>elf</item>
+        <item>elf</item>
+        <item>elf</item>
+        <item>elf</item>
+        <item>elf</item>
+        <item>human</item>
+        <item>halfling</item>
+        <item>dwarf</item>
     </string-array>
-    <string-array
-        name="arrHeritage"></string-array>
-    <string-array
-        name="arrHeritage"></string-array>
-    <string-array
-        name="arrHeritage"></string-array>
-    <string-array
-        name="arrHeritage"></string-array>
-    <string-array
-        name="arrHeritage"></string-array>
-    <string-array
-        name="arrHeritage"></string-array>
+
+    <string-array name="arrGoodAlignment">
+        <item>evil</item>
+        <item>chaotic</item>
+        <item>chaotic</item>
+        <item>neutral</item>
+        <item>neutral</item>
+        <item>lawful</item>
+        <item>lawful</item>
+        <item>good</item>
+        <item>good</item>
+        <item>good</item>
+        <item>good</item>
+        <item>good</item>
+    </string-array>
+
+    <string-array name="arrLawfulAlignment">
+        <item>evil</item>
+        <item>evil</item>
+        <item>chaotic</item>
+        <item>neutral</item>
+        <item>neutral</item>
+        <item>lawful</item>
+        <item>lawful</item>
+        <item>lawful</item>
+        <item>lawful</item>
+        <item>lawful</item>
+        <item>good</item>
+        <item>good</item>
+    </string-array>
+
+    <string-array name="arrNeutralAlignment">
+        <item>evil</item>
+        <item>chaotic</item>
+        <item>chaotic</item>
+        <item>neutral</item>
+        <item>neutral</item>
+        <item>neutral</item>
+        <item>neutral</item>
+        <item>neutral</item>
+        <item>neutral</item>
+        <item>lawful</item>
+        <item>lawful</item>
+        <item>good</item>
+    </string-array>
+
+    <string-array name="arrChaoticAlignment">
+        <item>evil</item>
+        <item>evil</item>
+        <item>chaotic</item>
+        <item>chaotic</item>
+        <item>chaotic</item>
+        <item>chaotic</item>
+        <item>chaotic</item>
+        <item>chaotic</item>
+        <item>chaotic</item>
+        <item>lawful</item>
+        <item>good</item>
+        <item>good</item>
+    </string-array>
+
+    <string-array name="arrEvilAlignment">
+        <item>evil</item>
+        <item>evil</item>
+        <item>evil</item>
+        <item>evil</item>
+        <item>evil</item>
+        <item>chaotic</item>
+        <item>chaotic</item>
+        <item>neutral</item>
+        <item>neutral</item>
+        <item>lawful</item>
+        <item>lawful</item>
+        <item>good</item>
+    </string-array>
+
+    <string-array name="arrOccupation">
+        <item>Outsider</item>
+        <item>Criminal</item>
+        <item>Commoner</item>
+        <item>Commoner</item>
+        <item>Commoner</item>
+        <item>Tradesperson</item>
+        <item>Tradesperson</item>
+        <item>Merchant</item>
+        <item>Specialist</item>
+        <item>Religious</item>
+        <item>Security</item>
+        <item>Authority</item>
+    </string-array>
+
+    <string-array name="arrOutsiderOccupation">
+        <item>hermit/prophet</item>
+        <item>fugitive/outlaw/exile</item>
+        <item>fugitive/outlaw/exile</item>
+        <item>barbarian</item>
+        <item>barbarian</item>
+        <item>beggar/vagrant/refugee</item>
+        <item>beggar/vagrant/refugee</item>
+        <item>herder/hunter/trapper</item>
+        <item>herder/hunter/trapper</item>
+        <item>diplomat/envoy</item>
+        <item>rare humanoid</item>
+        <item>otherworldly/arcane</item>
+    </string-array>
+
+    <string-array name="arrCriminalOccupation">
+        <item>bandit/brigand/thug</item>
+        <item>bandit/brigand/thug</item>
+        <item>cutpurse/thief</item>
+        <item>cutpurse/thief</item>
+        <item>bodyguard/tough</item>
+        <item>bodyguard/tough</item>
+        <item>burglar</item>
+        <item>con artist/swindler</item>
+        <item>dealer/fence</item>
+        <item>racketeer</item>
+        <item>lieutenant</item>
+        <item>boss/kingpin</item>
+    </string-array>
+
+    <string-array name="arrCommonerOccupation">
+        <item>layabout/simpleton</item>
+        <item>beggar/urchin</item>
+        <item>beggar/urchin</item>
+        <item>child</item>
+        <item>child</item>
+        <item>housewife/husband</item>
+        <item>farmer/herder/hunter</item>
+        <item>farmer/herder/hunter</item>
+        <item>laborer/servant</item>
+        <item>driver/porter/guide</item>
+        <item>sailor/guard</item>
+        <item>apprentice/adventurer</item>
+    </string-array>
+
+    <string-array name="arrTradespersonOccupation">
+        <item>musician/troubador</item>
+        <item>artist/actor/acrobat</item>
+        <item>cobbler/furrier/tailor</item>
+        <item>weaver/basketmaker</item>
+        <item>potter/carpenter</item>
+        <item>mason/baker/chandler</item>
+        <item>cooper/wheelwright</item>
+        <item>tanner/ropemaker</item>
+        <item>stablekeeper/herbalist</item>
+        <item>vintner/jeweler</item>
+        <item>inkeep/tavernkeep</item>
+        <item>smith/armorer</item>
+    </string-array>
+
+    <string-array name="arrMerchantOccupation">
+        <item>raw materials/supplies</item>
+        <item>raw materials/supplies</item>
+        <item>general goods/outfitter</item>
+        <item>general goods/outfitter</item>
+        <item>grain/livestock</item>
+        <item>ale/wine/spirits</item>
+        <item>clothing/jewelry</item>
+        <item>weapons/armor</item>
+        <item>spices/tobacco</item>
+        <item>labor/slaves</item>
+        <item>books/scrolls</item>
+        <item>magic supplies/items</item>
+    </string-array>
+
+    <string-array name="arrSpecialistOccupation">
+        <item>clerk/scribe</item>
+        <item>undertaker</item>
+        <item>perfumer</item>
+        <item>navigator/guide</item>
+        <item>spy/diplomat</item>
+        <item>cartographer</item>
+        <item>locksmith/tinker</item>
+        <item>architect/engineer</item>
+        <item>physician/apothecary</item>
+        <item>sage/scholar</item>
+        <item>alchemist/astrologer</item>
+        <item>inventor/wizard</item>
+    </string-array>
+
+    <string-array name="arrReligiousOccupation">
+        <item>heretic/apostate</item>
+        <item>zealot</item>
+        <item>mendicant/pilgrim</item>
+        <item>mendicant/pilgrim</item>
+        <item>monk/nun/cultist</item>
+        <item>monk/nun/cultist</item>
+        <item>preacher/prophet</item>
+        <item>missionary</item>
+        <item>templar/protector</item>
+        <item>priest/cult leader</item>
+        <item>priest/cult leader</item>
+        <item>high priest</item>
+    </string-array>
+
+    <string-array name="arrSecurityOccupation">
+        <item>militia</item>
+        <item>militia</item>
+        <item>scout/warden</item>
+        <item>watch/patrol</item>
+        <item>watch/patrol</item>
+        <item>raw recruit</item>
+        <item>foot soldier</item>
+        <item>foot soldier</item>
+        <item>archer</item>
+        <item>officer/constable</item>
+        <item>cavalry/knight</item>
+        <item>hero/general</item>
+    </string-array>
+
+    <string-array name="arrAuthorityOccupation">
+        <item>courier/messenger</item>
+        <item>town crier</item>
+        <item>tax collector</item>
+        <item>clerk/administrator</item>
+        <item>clerk/administrator</item>
+        <item>armiger/gentry</item>
+        <item>armiger/gentry</item>
+        <item>magistrate/judge</item>
+        <item>guildmaster</item>
+        <item>lesser nobility</item>
+        <item>greater nobility</item>
+        <item>ruler/warlord</item>
+    </string-array>
+
+    <string-array name="arrMotivationGood">
+        <item>empathy</item>
+        <item>empathy</item>
+        <item>charity</item>
+        <item>charity</item>
+        <item>valor</item>
+        <item>valor</item>
+        <item>trust</item>
+        <item>trust</item>
+        <item>cooperation</item>
+        <item>cooperation</item>
+        <item>love</item>
+        <item>love</item>
+    </string-array>
+
+    <string-array name="arrMotivationLawful">
+        <item>truth</item>
+        <item>truth</item>
+        <item>justice</item>
+        <item>justice</item>
+        <item>discipline</item>
+        <item>discipline</item>
+        <item>loyalty</item>
+        <item>loyalty</item>
+        <item>order</item>
+        <item>order</item>
+        <item>honor</item>
+        <item>honor</item>
+    </string-array>
+
+    <string-array name="arrMotivationNeutral">
+        <item>knowledge</item>
+        <item>knowledge</item>
+        <item>balance</item>
+        <item>balance</item>
+        <item>fame</item>
+        <item>fame</item>
+        <item>advancement</item>
+        <item>advancement</item>
+        <item>investment</item>
+        <item>investment</item>
+        <item>luck</item>
+        <item>luck</item>
+    </string-array>
+
+    <string-array name="arrMotivationChaotic">
+        <item>satisfaction</item>
+        <item>satisfaction</item>
+        <item>vengeance</item>
+        <item>vengeance</item>
+        <item>impulse</item>
+        <item>impulse</item>
+        <item>celebration</item>
+        <item>celebration</item>
+        <item>disruption</item>
+        <item>disruption</item>
+        <item>passion</item>
+        <item>passion</item>
+    </string-array>
+
+    <string-array name="arrMotivationEvil">
+        <item>corruption</item>
+        <item>corruption</item>
+        <item>control</item>
+        <item>control</item>
+        <item>infamy</item>
+        <item>infamy</item>
+        <item>greed</item>
+        <item>greed</item>
+        <item>power</item>
+        <item>power</item>
+        <item>hatred</item>
+        <item>hatred</item>
+    </string-array>
+
+    <string-array name="arrVirtues">
+        <item>ambitious</item>
+        <item>funny</item>
+        <item>benevolent</item>
+        <item>generous</item>
+        <item>bold</item>
+        <item>gregarious</item>
+        <item>brave</item>
+        <item>helpful</item>
+        <item>charitable</item>
+        <item>honest</item>
+        <item>chaste</item>
+        <item>honorable</item>
+        <item>cautious</item>
+        <item>hopeful</item>
+        <item>compassionate</item>
+        <item>humble</item>
+        <item>confident</item>
+        <item>idealistic</item>
+        <item>considerate</item>
+        <item>just</item>
+        <item>cooperative</item>
+        <item>kind</item>
+        <item>courteous</item>
+        <item>loving</item>
+        <item>creative</item>
+        <item>loyal</item>
+        <item>curious</item>
+        <item>merciful</item>
+        <item>daring</item>
+        <item>orderly</item>
+        <item>defiant</item>
+        <item>patient</item>
+        <item>dependable</item>
+        <item>persistent</item>
+        <item>determined</item>
+        <item>pious</item>
+        <item>disciplined</item>
+        <item>resourceful</item>
+        <item>enthusiastic</item>
+        <item>respectful</item>
+        <item>fair</item>
+        <item>responsible</item>
+        <item>focused</item>
+        <item>selfless</item>
+        <item>forgiving</item>
+        <item>steadfast</item>
+        <item>friendly</item>
+        <item>tactful</item>
+        <item>frugal</item>
+        <item>tolerant</item>
+    </string-array>
+
+    <string-array name="arrVices">
+        <item>mad</item>
+        <item>addict</item>
+        <item>liar</item>
+        <item>aggressive</item>
+        <item>lustful</item>
+        <item>alcoholic</item>
+        <item>antagonistic</item>
+        <item>malicious</item>
+        <item>arrogant</item>
+        <item>manipulative</item>
+        <item>boastful</item>
+        <item>merciless</item>
+        <item>cheater</item>
+        <item>moody</item>
+        <item>covetous</item>
+        <item>murderous</item>
+        <item>cowardly</item>
+        <item>obsessive</item>
+        <item>cruel</item>
+        <item>petulant</item>
+        <item>decadent</item>
+        <item>prejudiced</item>
+        <item>deceitful</item>
+        <item>reckless</item>
+        <item>disloyal</item>
+        <item>resentful</item>
+        <item>doubtful</item>
+        <item>rude</item>
+        <item>egotistical</item>
+        <item>ruthless</item>
+        <item>envious</item>
+        <item>self-pitying</item>
+        <item>gluttonous</item>
+        <item>selfish</item>
+        <item>greedy</item>
+        <item>snobbish</item>
+        <item>hasty</item>
+        <item>stingy</item>
+        <item>hedonist</item>
+        <item>stubborn</item>
+        <item>impatient</item>
+        <item>vain</item>
+        <item>inflexible</item>
+        <item>vengeful</item>
+        <item>irritable</item>
+        <item>wasteful</item>
+        <item>lazy</item>
+        <item>wrathful</item>
+        <item>lewd</item>
+        <item>zealous</item>
+    </string-array>
 </resources>
